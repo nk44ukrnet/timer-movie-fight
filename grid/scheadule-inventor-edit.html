@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h3 style="text-align: center;"><span lang="UK">Ви отримали безкоштовне заняття у&nbsp;</span><span
+        lang="EN-US">STEM</span>-школ<span lang="UK">і</span><span lang="UK">&nbsp;</span><span
+        lang="EN-US">INVENTOR</span><span lang="UK">.</span></h3>
+<p><span lang="UK">Заповніть, будь ласка, форму нижче та вкажіть ваш промокод.</span></p>
+<div id="modal-remote" class=""
+     style="max-width: 600px; min-width: 300px; margin: 0; background-color: #fff; padding: 0px;">
+    <form id="remoteStudyForm" class="form-horizontal" style="padding: 15px;" name="remote-study-form">
+        <div class="form-group">
+            <div class="col-sm-12"><input class="form-control  input-blc-4" name="name" required="" type="text" value=""
+                                          placeholder="Введіть ваше ім'я та прізвище"/> <input name="form-type"
+                                                                                               type="hidden"
+                                                                                               value="Форма 1. Форма в шапке."/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12"><input id="phone-mask" class="form-control  input-blc-4" name="phone" required=""
+                                          type="text" value="" placeholder="Введіть ваш телефон"/></div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12"><input class="form-control  input-blc-4" name="email" required="" type="email"
+                                          value="" placeholder="Введіть ваш email"/></div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <select id="courseStorage" class="form-control sltc" name="course_id" required="">
+                    <option disabled="disabled" selected="selected" value="">Оберіть школу</option>
+                    <option value="Київ, вул. Олександрівська, 1, Ст. М. Нивки">Київ, вул. Олександрівська, 1, Ст. М.
+                        Нивки
+                    </option>
+                    <option value="Київ, Златоустівська, 55">Київ, Златоустівська, 55</option>
+                    <option value="Київ, М. Цвєтаєвої, 3">Київ, М. Цвєтаєвої, 3</option>
+                    <option value="Київ, Старонаводницька, 4в">Київ, Старонаводницька, 4в</option>
+                    <option value="Київ, Б. Гмирі, 6">Київ, Б. Гмирі, 6</option>
+                    <option value="Київ, Дніпровська набережна, 25А">Київ, Дніпровська набережна, 25А</option>
+                    <option value="Київ, вул. Василя Липківського, 33а ">Київ, вул. Василя Липківського, 33а</option>
+                    <option value="Київ, просп. Героїв Сталінграду, 10а, к.8">Київ, просп. Героїв Сталінграду, 10а,
+                        к.8
+                    </option>
+                    <option value="Київ, просп. Героїв Сталінграду, 21/38 ">Київ, просп. Героїв Сталінграду, 21/38
+                    </option>
+                    <option value="remote">Дистанційний формат навчання</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group" style="width: 0; height: 0; margin: 0;" id="additionalContent">&nbsp;</div>
+        <div class="form-group">
+            <div class="col-sm-12"><input class="form-control  input-blc-4" name="message_type" type="text" value=""
+                                          placeholder="Промокод"/></div>
+        </div>
+        <input id="lang" type="hidden" value="ru"/>
+        <div class="form-group">
+            <div class="col-sm-12"><input style="display: none;" name="message_type3" type="text" value="Другий шанс"/>
+                <input id="currentCheckbox" required="" type="checkbox"/> <label
+                        style="display: inline; font-weight: 400;" for="currentCheckbox"> &nbsp;&nbsp; Натискаючи
+                    кнопку, я даю згоду на обробку персональних даних.</label></div>
+        </div>
+        <div class="form-group ">
+            <div class="col-sm-12"><input id="disableMe" class="btn btn-default order-btn-7"
+                                          style="padding: 10px; margin: 10px; margin-left: 0; border: transparent; background-color: red; color: #ffffff; font-size: 20px; border-radius: 5px; cursor: pointer;"
+                                          type="submit" value="Реєстрація"/></div>
+        </div>
+    </form>
+    <div class="personal-data">&nbsp;</div>
+</div>
+<script>// <![CDATA[
+const courseId = document.querySelector('#courseStorage');
+const initialCourseName = courseId.name;
+console.log(initialCourseName);
+courseId.addEventListener('input', function () {
+    let additionalContent = document.querySelector('#additionalContent');
+   if(this.value === 'remote') {
+       additionalContent.setAttribute('style', '');
+       courseId.name = 'nomatter';
+       additionalContent.innerHTML = `
+       <div class="col-sm-12">
+                <select class="form-control sltc" name="course_id" required="">
+                    <option value="" selected disabled>Оберіть курс</option>
+                    <option disabled="disabled" value="">STEM-Junior</option>
+                    <option value="JUNIOR: Наука про світ + Ранній розвиток (3-5 років)">Наука про світ</option>
+                    <option value="JUNIOR: Цікава інженерія (+ Початкова механіка) (5-6 років)">"Цікава інженерія"</option>
+                    <option value="JUNIOR: Програмування і англійська для дошкільнят (4-6 років)">"Програмування і англійська мова"</option>
+                    <option value="JUNIOR: Програмування Scratch Junior (5-6 років)">"Програмування Scratch Junior"</option>
+                    <option disabled="disabled" value="">STEM-Middle</option>
+                    <option value="MIDDLE: Програмування з Minecraft:EE">Програмування з Minecraft:EE</option>
+                    <option value="MIDDLE: Пізнаю світ з Minecraft :EE">Пізнаю світ з Minecraft :EE</option>
+                    <option value="MIDDLE: Архітектура">Архітектура</option>
+                    <option value="MIDDLE: Програмування Scratch (Робототехніка Scratch)">Програмування Scratch</option>
+                    <option value="MIDDLE: Science ONLINE">Science</option>
+                    <option value="MIDDLE: GAME LAB">Game LAB</option>
+                    <option value="MIDDLE: Програмування Scratch для першокласників">Програмування Scratch для першокласників</option>
+                    <option disabled="disabled" value="">STEM-Senior</option>
+                    <option value="SENIOR: GAMEDEV: ADVENTURE">GameDev: Adventure</option>
+                </select>
+            </div>
+       `;
+   } else {
+       additionalContent.setAttribute('style', 'width:0; height: 0; margin: 0');
+       additionalContent.innerHTML = '';
+       courseId.name = initialCourseName;
+   }
+});
+
+function showPopup() {
+    location.replace('https://inventor.com.ua/registration-forms/thanks-return-cl.html');
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbySrweyiVwaShUf9xn49q7mn4bVwuS0kb5tRLuwzqeB8FrzP74/exec';
+const form = document.forms['remote-study-form'];
+const disableMe = document.querySelector('#disableMe');
+
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    localStorage.setItem('courseName', courseId.value);
+    disableMe.disabled = true;
+    disableMe.style.backgroundColor = 'coral';
+    disableMe.value = 'Відправляемо дані...';
+    fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => (showPopup(), response))//console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+});
+// ]]></script>
+<script src="https://unpkg.com/imask@6.0.3/dist/imask.js"></script>
+<script>// <![CDATA[
+var phoneMask = IMask(document.getElementById('phone-mask'), {
+    mask: '+{38}(000)000-00-00'
+});
+// ]]></script>
+
+</body>
+</html>

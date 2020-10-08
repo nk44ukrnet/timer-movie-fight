@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="box">
+
+</div>
+
+<div id="links">
+
+</div>
+
+<script>
+    const box = document.querySelector('#box'),
+         links = document.querySelector('#links');
+
+    for(let i = 1; i <= 901; i++) {
+        let data = {
+            rand() {
+                data.num0 = Math.floor(Math.random() * 5 + 5);
+                data.num1 = Math.floor(Math.random() * 10);
+                data.num2 = Math.floor(Math.random() * 10);
+                data.num3 = Math.floor(Math.random() * 10);
+            }
+        };
+        data.rand();
+
+        let newP = document.createElement('span');
+        newP.innerHTML = `("${data.num0}${data.num1}${data.num2}${data.num3}${i}","0"),<br>`;
+        box.appendChild(newP);
+
+        let newA = document.createElement('a');
+        newA.href = `http://ticket.inventor.com.ua/ticket.php?num=${data.num0}${data.num1}${data.num2}${data.num3}${i}`;
+        newA.innerHTML = `${newA.href}<br>`;
+        links.appendChild(newA);
+    }
+</script>
+
+</body>
+</html>

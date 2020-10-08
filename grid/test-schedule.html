@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .course {
+            padding: 5px;
+            margin: 5px;
+            max-width: 400px;
+            border: 1px solid black;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .error {
+            color: red;
+            font-size: 18px;
+        }
+        .filter_item {
+            margin-top: 10px;
+            margin-bottom: -20px;
+        }
+        .filter_item_del {
+            background-color: rgba(220, 220, 220, 0.69);
+            max-width: 300px;
+            display: inline-block;
+            position: relative;
+        }
+        .filter_item_del::after {
+            content: 'x';
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            top: -5px;
+            right: -15px;
+        }
+    </style>
+</head>
+<body>
+
+
+<select name="age" id="selectAge">
+    <option value="" selected disabled>Оберіть вік</option>
+    <option value="3-6">3-6</option>
+    <option value="6-10">6-10</option>
+    <option value="10-16">10-16</option>
+</select>
+
+<select name="type" id="selectType">
+    <option value="" selected disabled>Оберіть напрям</option>
+    <option value="програмування">програмування</option>
+    <option value="архітектура">архітектура</option>
+    <option value="інженерія">інженерія</option>
+    <option value="наука">наука</option>
+    <option value="gamedev">gamedev</option>
+</select>
+
+
+<div class="filter_item">
+    <!--<div class="filter_item_del">3-6</div>-->
+</div>
+
+<br><br><br>
+
+<div class="filter_result">
+    <!--junior-->
+    <div class="jun heading" data-age="3-6">
+        <hr>
+        <h2>Курси STEM-Junior</h2>
+        <hr>
+    </div>
+    <div class="course" data-age="3-6" data-type="наука">Курс "Наука про світ" (3-5 років)</div>
+    <div class="course" data-age="3-6" data-type="інженерія">Курс "Цікава інженерія" (5-6 років)</div>
+    <div class="course" data-age="3-6" data-type="програмування">Курс "Програмування і англійська мова" (4-5 років)
+    </div>
+    <div class="course" data-age="3-6" data-type="програмування">Курс "Програмування Scratch Junior" (5-6 років)</div>
+    <!-- middle -->
+    <div class="mid heading" data-age="6-10">
+        <hr>
+        <h2>Курси STEM-Middle</h2>
+        <hr>
+    </div>
+    <div class="course" data-age="6-10" data-type="програмування">Курс "Програмування Scratch" (Робототехніка Scratch)
+        (2й клас+)
+    </div>
+    <div class="course" data-age="6-10" data-type="наука">Курс "Пізнаю світ з Minecraft: EE" (2й клас+)</div>
+    <div class="course" data-age="6-10" data-type="програмування">Курс "Програмування з Minecraft: EE" (3й клас+)</div>
+    <div class="course" data-age="6-10" data-type="архітектура">Курс "Архітектура" (3й клас+)</div>
+    <div class="course" data-age="6-10" data-type="gamedev">Курс "Game LAB" (8+ років)</div>
+    <div class="course" data-age="6-10" data-type="наука">Курс "Science" (4й клас+)</div>
+    <!-- senior -->
+    <div class="sen heading" data-age="10-16">
+        <hr>
+        <h2>Курси STEM-Senior</h2>
+        <hr>
+    </div>
+    <div class="course" data-age="10-16" data-type="gamedev">Курс "GameDev: Adventure" (10+ років)</div>
+</div>
+
+<script>
+    //heading
+    const heading = document.querySelectorAll('.heading'),
+        //courses
+        courses = document.querySelectorAll('.course'),
+        //select fields
+        selectAge = document.querySelector('#selectAge'),
+        selectType = document.querySelector('#selectType'),
+        //filter_item
+        filterItem = document.querySelector('.filter_item');
+
+    let filetrValueAge = '';
+    let filterValueType = '';
+
+    function selectAgeFilterInit(val) {
+        if(selectType.value === '' && val.value !== '') {
+            //set value to age var
+            filetrValueAge = val.value;
+            //loop courses
+            for(let item of courses) {
+                if(item.dataset.age !== val.value) {
+                    item.classList.add('none');
+                } else {
+                    item.classList.remove('none');
+                }
+            }
+            //loop headings
+            for(let head of heading) {
+                if(head.dataset.age !== val.value) {
+                    head.classList.add('none')
+                } else {
+                    head.classList.remove('none');
+                }
+            }
+            //add to filter
+            if(!filterItem.children.length) {
+                let newFilterElr = document.createElement('div');
+                newFilterElr.setAttribute('data-age', filetrValueAge);
+                newFilterElr.innerHTML = `${filetrValueAge} років`;
+                filterItem.append(newFilterElr);
+                newFilterElr.classList.add('filter_item_del');
+            }
+        }
+    }
+
+    selectAge.addEventListener('input',function (e) {
+        selectAgeFilterInit(this);
+    });
+    selectType.addEventListener('input',function (e) {
+
+    });
+
+</script>
+
+</body>
+</html>

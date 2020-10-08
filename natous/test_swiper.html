@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .outer {
+        max-width: 471px;
+        margin: 0 auto;
+
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow: scroll;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        position: relative;
+    }
+    .container::-webkit-scrollbar {
+        visibility: hidden;
+    }
+    .content {
+        width: 100%;
+        float: right;
+        margin: 0;
+        padding: 0;
+        height: 315px;
+        position: relative;
+        transition: all .5s;
+    }
+    img {
+        /*width: 100%;*/
+        height: 315px;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    #next, #prev {
+        padding: 5px;
+        border: 1px solid black;
+        margin: 2px;
+        display: inline-block;
+    }
+</style>
+<body>
+<div class="outer">
+    <div class="container">
+        <div class="content"><img src="http://robotica.in.ua/gallery/2019/img/15.jpg" alt="img01"></div>
+        <div class="content"><img src="http://robotica.in.ua/gallery/2019/img/51.jpg" alt="img01"></div>
+        <div class="content"><img src="http://robotica.in.ua/gallery/2019/img/29.jpg" alt="img01"></div>
+    </div>
+</div>
+<span id="prev">prev</span> <br>
+<span id="next">next</span>
+
+<script>
+    const content = document.querySelectorAll('.content'),
+        container = document.querySelector('.container'),
+        prev = document.querySelector('#prev'),
+        next = document.querySelector('#next');
+
+    let marginLeft = 0;
+
+    next.addEventListener('click', function (e) {
+        marginLeft -= 100;
+        if(marginLeft > (-300)) {
+            for (let i = 1; i < content.length +1; i++) {
+                content[i -1 ].style.left = `${marginLeft}%`;
+            }
+        } else {
+            marginLeft += 100;
+        }
+    });
+    prev.addEventListener('click', function (e) {
+        marginLeft += 100;
+        console.log(marginLeft);
+        if(marginLeft < (-100)) {
+            for (let i = 1; i < content.length +1; i++) {
+                content[i -1 ].style.left = `${marginLeft}%`;
+            }
+        } else {
+            marginLeft -= 100;
+        }
+    })
+</script>
+</body>
+</html>

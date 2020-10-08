@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .show-modal {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<button id="press">press</button>
+
+<!--Junior-->
+<!--
+<div class="modal-bg" id="modal-bg-remote" style="z-index: 100; position: fixed; top: 0;left: 0; background-color: rgba(0,0,0,.25); width: 100%; height: 100%; display: none; ">
+    <div id="modal-remote" class="" style="max-width: 600px; min-width: 300px; position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%); background-color: #fff; padding: 15px;">
+        <h3 style="text-align: center; padding-top: 7px;">Записатися на online курс</h3>
+        <form class="form-horizontal" name="remote-study-form" id="remoteStudyForm" style="padding: 15px;">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input name="name" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваше ім'я" required>
+                    <input type="hidden" name="form-type" value="Форма 1. Форма в шапке.">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input name="phone" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваш телефон" required>
+                </div>
+            </div>
+
+            <div class="form-group" style="">
+                <div class="col-sm-12">
+                    <select name="course_id" class="form-control sltc" required>
+                        <option value="" disabled selected>Оберіть курс</option>
+                        <option value="JUNIOR: Наука про світ + Ранній розвиток (3-5 років)">"Наука про світ"+"Ранній розвиток"</option>
+                        <option value="JUNIOR: Цікава інженерія (+ Початкова механіка) (5-6 років)">"Цікава інженерія" (+ "Початкова механіка")</option>
+                        <option value="JUNIOR: Підготовка до школи (5-6 років)">"Підготовка до школи"</option>
+                        <option value="JUNIOR: Програмування і англійська для дошкільнят (4-6 років)">"Програмування і англійська для дошкільнят"</option>
+                    </select>
+                </div>
+            </div>
+
+            <input id="lang" type="hidden" value="ru">
+            <div class="form-group ">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-default order-btn-7" id="disableMe" value="Записатися" style="padding: 10px;margin: 10px; margin-left: 0; border: transparent; background-color: red; color: #ffffff; font-size: 20px; border-radius: 5px; cursor: pointer">
+                </div>
+            </div>
+
+        </form>
+        <div class="personal-data">Натискаючи кнопку, я даю згоду на обробку персональних даних.</div>
+    </div>
+</div>
+-->
+
+<!--Middle-->
+<!--
+<div class="modal-bg" id="modal-bg-remote" style="z-index: 100; position: fixed; top: 0;left: 0; background-color: rgba(0,0,0,.25); width: 100%; height: 100%; display: none; ">
+    <div id="modal-remote" class="" style="max-width: 600px; min-width: 300px; position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%); background-color: #fff; padding: 15px;">
+        <h3 style="text-align: center; padding-top: 7px;">Записатися на online курс</h3>
+        <form class="form-horizontal" name="remote-study-form" id="remoteStudyForm" style="padding: 15px;">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input name="name" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваше ім'я" required>
+                    <input type="hidden" name="form-type" value="Форма 1. Форма в шапке.">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input name="phone" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваш телефон" required>
+                </div>
+            </div>
+
+            <div class="form-group" style="">
+                <div class="col-sm-12">
+                    <select name="course_id" class="form-control sltc" required>
+                        <option value="" disabled selected>Оберіть курс</option>
+                        <option value="MIDDLE: Програмування з Minecraft:EE">Програмування з Minecraft:EE</option>
+                        <option value="MIDDLE: Пізнаю світ з Minecraft :EE">Пізнаю світ з Minecraft :EE</option>
+                        <option value="MIDDLE: Архітектура">Архітектура</option>
+                        <option value="MIDDLE: Програмування Scratch (Робототехніка Scratch)">Програмування Scratch (Робототехніка Scratch)</option>
+                        <option value="MIDDLE: Програмування WeDo 2.0 (Основи робототехніки)">Програмування WeDo 2.0 (Основи робототехніки)</option>
+                        <option value="MIDDLE: Science+Практична механіка">Science+Практична механіка</option>
+                    </select>
+                </div>
+            </div>
+
+            <input id="lang" type="hidden" value="ru">
+            <div class="form-group ">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-default order-btn-7" id="disableMe" value="Записатися" style="padding: 10px;margin: 10px; margin-left: 0; border: transparent; background-color: red; color: #ffffff; font-size: 20px; border-radius: 5px; cursor: pointer">
+                </div>
+            </div>
+
+        </form>
+        <div class="personal-data">Натискаючи кнопку, я даю згоду на обробку персональних даних.</div>
+    </div>
+</div>
+-->
+
+    <div id="modal-remote" class="" style="max-width: 600px; min-width: 300px; margin: 0 auto; background-color: #fff; padding: 15px;">
+        <h3 style="text-align: center; padding-top: 7px;">Записатися на online курс</h3>
+        <form class="form-horizontal" name="remote-study-form" id="remoteStudyForm" style="padding: 15px;">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input name="name" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваше ім'я" required>
+                    <input type="hidden" name="form-type" value="Форма 1. Форма в шапке.">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input name="phone" type="text" class="form-control input-blc-4" value="" placeholder="Введіть ваш телефон" required>
+                </div>
+            </div>
+
+            <div class="form-group" style="">
+                <div class="col-sm-12">
+                    <select name="course_id" class="form-control sltc" required>
+                        <option value="" disabled selected>Оберіть курс</option>
+                        <option value="MIDDLE: Програмування з Minecraft:EE">Програмування з Minecraft:EE</option>
+                        <option value="MIDDLE: Пізнаю світ з Minecraft :EE">Пізнаю світ з Minecraft :EE</option>
+                        <option value="MIDDLE: Архітектура">Архітектура</option>
+                        <option value="MIDDLE: Програмування Scratch (Робототехніка Scratch)">Програмування Scratch (Робототехніка Scratch)</option>
+                        <option value="MIDDLE: Програмування WeDo 2.0 (Основи робототехніки)">Програмування WeDo 2.0 (Основи робототехніки)</option>
+                        <option value="MIDDLE: Science+Практична механіка">Science+Практична механіка</option>
+                    </select>
+                </div>
+            </div>
+
+            <input id="lang" type="hidden" value="ru">
+            <div class="form-group ">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn-default order-btn-7" id="disableMe" value="Записатися" style="padding: 10px;margin: 10px; margin-left: 0; border: transparent; background-color: red; color: #ffffff; font-size: 20px; border-radius: 5px; cursor: pointer">
+                </div>
+            </div>
+
+        </form>
+        <div class="personal-data">Натискаючи кнопку, я даю згоду на обробку персональних даних.</div>
+    </div>
+
+
+
+<!-- senior -->
+<!--
+    <div class="modal-bg" id="modal-bg-remote" style="z-index: 100; position: fixed; top: 0;left: 0; background-color: rgba(0,0,0,.25); width: 100%; height: 100%; display: none; ">
+             <div id="modal-remote" class="" style="max-width: 600px; min-width: 300px; position: absolute; left: 50%;top: 50%;transform: translate(-50%, -50%); background-color: #fff; padding: 15px;">
+                 <h3 style="text-align: center; padding-top: 7px;">Записатися на online курс</h3>
+                <form class="form-horizontal" name="remote-study-form" id="remoteStudyForm" style="padding: 15px;">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input name="name" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваше ім'я" required>
+                            <input type="hidden" name="form-type" value="Форма 1. Форма в шапке.">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input name="phone" type="text" class="form-control  input-blc-4" value="" placeholder="Введіть ваш телефон" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="">
+                        <div class="col-sm-12">
+                            <select name="course_id" class="form-control sltc" required>
+                                <option value="" disabled selected>Оберіть курс</option>
+                                <option value="SENIOR: Проектування роботів в LEGO Digital Design (10+ років)">Проектування роботів в LEGO Digital Design</option>
+                                <option value="SENIOR: Developer Web Online (11+ років)">Developer Web Online</option>
+                                <option value="SENIOR: GameDev Online (12+ років)">GameDev Online</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input id="lang" type="hidden" value="ru">
+                    <div class="form-group ">
+                        <div class="col-sm-12">
+                            <input type="submit" class="btn btn-default order-btn-7" id="disableMe" value="Записатися" style="padding: 10px;margin: 10px; margin-left: 0; border: transparent; background-color: red; color: #ffffff; font-size: 20px; border-radius: 5px; cursor: pointer">
+                        </div>
+                    </div>
+
+                </form>
+                <div class="personal-data">Натискаючи кнопку, я даю згоду на обробку персональних даних.</div>
+            </div>
+    </div>
+-->
+
+<p>
+    У зв’язку із карантином ми продовжуємо реєстрації на деякі з конкурсних категорій.
+</p>
+<ul>
+    <li>WRO регулярна, WRO підготовчі (Сумо та Слалом), Open та Open Source Football — реєстрація відкрита до 12.04, оплатити можна до 19.04</li>
+    <li>WRO WeDo 2.0 та Сумо WeDo 2.0 — реєстрація до 15.03 (можливо, закриється раніше, по заповненню місць, адже залишилось лише три місця!), оплата до 10.04</li>
+    <li>Архітектура by INVENTOR — реєстрація до 15.03, оплата до 20.03</li>
+    <li>FLL Junior — реєстрація до 30.04, оплата до 15.05</li>
+    <li>Виставка-конкурс творчих робіт з LEGO — реєстрація до 26.05 (по заповненню місць закриється раніше), оплата до 27.05</li>
+    <li>ROBOART для дошкільнят — реєстрація до 12.04, оплата до 19.04</li>
+    <li>Конкурс GameDev Challenge — попередня реєстрація до 30.04</li>
+    <li>Турнір CityRobots — реєстрація до 30.04 та безпосередньо на фестивалі</li>
+</ul>
+
+
+
+<script>
+    //add padding to td
+    const allTds = document.querySelectorAll('td');
+    for(let q = 0; q < allTds.length; q++) {
+        allTds[q].style.padding = '10px';
+    }
+    // modal works
+    const press = document.querySelector('#press'),
+        remoteBg = document.querySelector('#modal-bg-remote'),
+        remoteStudyForm = document.querySelector('#remoteStudyForm');
+    
+    press.addEventListener('click', function (e) {
+        remoteBg.classList.add('show-modal');
+    });
+    remoteBg.addEventListener('click', function (e) {
+        if(e.target === remoteBg) {
+        e.target.setAttribute('class', 'modal-bg');
+        }
+    });
+
+    //send to google sheet
+
+    function showPopup() {
+        location.replace('//inventor.com.ua');
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxzmNX_pDuP7Bg9tnHKqQIzh2l7rsE8Wu_HtUqC8m_hy3ziLGgr/exec';
+    const form = document.forms['remote-study-form'];
+    const disableMe = document.querySelector('#disableMe');
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        disableMe.disabled = true;
+        disableMe.style.backgroundColor = 'coral';
+        disableMe.value = 'Відправляемо дані...';
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => (showPopup(), response))//console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    });
+</script>
+
+
+<!------------------------------------------- -->
+<!--<p><strong><a href="#course1" data-toggle="collapse">Програмування з Minecraft:EE</a></strong></p>-->
+    <!--<div id="course1" class="collapse">-->
+        <!--<p><strong>Тривалість пешої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Тривалість другої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Що потрібно завантажити батькам?</strong></p>-->
+        <!--<p>Minecraft Education Edition, MakeCode, Skype</p>-->
+        <!--<p><strong>Опис</strong>:</p>-->
+        <!--<p>&nbsp;</p>-->
+    <!--</div>-->
+<!--<p><strong><a href="#course2" data-toggle="collapse">Пізнаю світ з Minecraft :EE</a></strong></p>-->
+    <!--<div id="course2" class="collapse">-->
+        <!--<p><strong>Тривалість пешої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Тривалість другої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Що потрібно завантажити батькам?</strong></p>-->
+        <!--<p>Minecraft або Minecraft Education Edition, Skype</p>-->
+        <!--<p><strong>Опис</strong>:</p>-->
+        <!--<p>Діти праціватимуть у програмному середовищі Minecraft: Edication Edition. Вчитель/ка на першій частині уроку проводить презентацію і дає завдання, після чого діти самостійно виконуватимуть їх в середовищі Minecraft: EE. На другій частині уроку обговорюємо та ділимося результатами роботи. На заняттях опрацьовуватимо останні уроки з курсу - "Висадка на Місяць" та "Космічні повідомлення" - дізнаємося основні відомості про Місяць, побудуємо власну космічну базу та антену космічного зв'язку, підготуємо повідомлення для відправки на Землю.</p>-->
+        <!--<p>&nbsp;</p>-->
+    <!--</div>-->
+<!--<p><strong><a href="#course3" data-toggle="collapse">Архітектура</a></strong></p>-->
+    <!--<div id="course3" class="collapse">-->
+        <!--<p><strong>Тривалість пешої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Тривалість другої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Що потрібно завантажити батькам?</strong></p>-->
+        <!--<p>Skype</p>-->
+        <!--<p><strong>Опис</strong>:</p>-->
+        <!--<p>Діти будуть працювати в середовищі Scratch 3.0 створюватимуть власні ігри, анімацію, мультфільми. На заняттях вивчатимемо, що таке алгоритми, цикли, умови, оператори саме на прикладі створення простих Ігор, які діти зможуть відтворювати самостійно вдома. Також буде домашнє завдання по кожному уроку, щось додати самостійно до створений за заняття гр</p>-->
+        <!--<p>&nbsp;</p>-->
+    <!--</div>-->
+<!--<p><strong><a href="#course4" data-toggle="collapse">Програмування Scratch (Робототехніка Scratch)</a></strong></p>-->
+    <!--<div id="course4" class="collapse">-->
+        <!--<p><strong>Тривалість пешої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Тривалість другої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Що потрібно завантажити батькам?</strong></p>-->
+        <!--<p>Skype, Scratch 3.0 online або desktop</p>-->
+        <!--<p><strong>Опис</strong>:</p>-->
+        <!--<p>&nbsp;</p>-->
+    <!--</div>-->
+<!--<p><strong><a href="#course5" data-toggle="collapse">Програмування WeDo 2.0 (Основи робототехніки)</a></strong></p>-->
+    <!--<div id="course5" class="collapse">-->
+        <!--<p><strong>Тривалість пешої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Тривалість другої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Що потрібно завантажити батькам?</strong></p>-->
+        <!--<p>Skype, LEGO Education WeDo - можливо Lego digital design</p>-->
+        <!--<p><strong>Опис</strong>:</p>-->
+        <!--<p>Діти будуть працювати у програмному середовищі Wedo 2.0, у тому що працюють і на заняттях, акцент буде на програмуванні різних завдань з блоків, які не стосуються програмування роботів, тобто без використання електроніки (моторів, смарт-хабів). Наприклад, запрограмувати послідовність виведення музики, щоб утворити мелодію чи тексту - складаючи в історію, відправлення і прийняття повідомлень, також використання математичних блоків для вирішення різних простих завдань, створення секундомірів, програм для зворотнього відліку, знаходження випадкових чисел, тощо</p>-->
+        <!--<p>&nbsp;</p>-->
+    <!--</div>-->
+<!--<p><strong><a href="#course6" data-toggle="collapse">Science+Практична механіка</a></strong></p>-->
+    <!--<div id="course6" class="collapse">-->
+        <!--<p><strong>Тривалість пешої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Тривалість другої частини уроку</strong>: 30-40 хвилин</p>-->
+        <!--<p><strong>Що потрібно завантажити батькам?</strong></p>-->
+        <!--<p>Slype, можливо Lego digital design</p>-->
+        <!--<p><strong>Опис</strong>:</p>-->
+        <!--<p>На початку заняття учні переглядатимуть відео-презентацію від викладача. На заняттях з курсу Science діти продовжать працювати в гугл-формах, вивчаючи закони фізики. Замість реального набору електрики вони будуть використовувати віртуальний. Замість олівця, будуть використовувати мишку, будуючи графіки. <br />Для цього їм не треба буде нічого скачувати: всі матеріали, що використовуються, будуть доступні онлайн. <br />Для реальних експериментів знадобляться лише повітряні кульки, сода, лимонна кислота (або оцет), папір.<br />Наприкінці заняття викладач переглядатиме результати роботи учнів і даватиме зворотній звязок.</p>-->
+    <!--</div>-->
+
+
+</body>
+</html>

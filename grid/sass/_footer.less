@@ -1,0 +1,42 @@
+.footer {
+    background-color: @color-secondary;
+
+    grid-column: center-start / center-end;
+
+
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+list-style: none;
+    padding: 8rem;
+    grid-gap: 2rem;
+
+    &__link:link,
+    &__link:visited{
+        font-size: 1.4rem;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: @font-display;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.5rem;
+        display: block;
+    }
+    &__link:hover,
+    &__link:active {
+        background-color: rgba(#fff, .05);
+    }
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: @color-grey-light-2;
+    margin-top: 6rem;
+    text-align: center;
+    width: 70%;
+    margin-right:auto;
+    margin-left:auto;
+}
