@@ -35,7 +35,7 @@ personalMovieDb.movies[q3] = q4;
 let check = +personalMovieDb.count;
 if (check < 10) {
     alert('You have watched little amout of films');
-} else if (check > 10 && check < 30) {
+} else if (check >= 10 && check < 30) {
     alert('You are typical film watcher');
 } else if (check >= 30) {
     alert('You are film lover!!! For sure!')
