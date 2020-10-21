@@ -1,4 +1,7 @@
-let numberOfFilms = prompt('How many films have you wathced?', '');
+let numberOfFilms = '';
+while(!numberOfFilms) {
+    numberOfFilms = prompt('How many films have you wathced?', '');
+}
 
 const personalMovieDb = {
     count: numberOfFilms,
@@ -8,11 +11,25 @@ const personalMovieDb = {
     privat: false
 };
 
-let question1 = prompt('Enter name of latest film you have watched', '');
-let question2 = prompt('Rate this film', '');
+let q1 = '',
+    q2 = '',
+    q3 = '',
+    q4 = '';
 
-let qeustion3 = prompt('Enter name of latest film you have watched', '');
-let question4 = prompt('Rate this film', '');
+while (!q1) {
+    q1 = prompt('Enter name of latest film you have watched', '');
+}
+while (!q2) {
+    q2 = prompt('Rate this film', '');
+}
+while (!q3) {
+    q3 = prompt('Enter name of latest film you have watched', '');
+}
+while (!q4) {
+    q4 = prompt('Rate this film', '');
+}
 
-personalMovieDb.movies[question1] = question2;
-personalMovieDb.movies[qeustion3] = question4;
+personalMovieDb.movies[q1] = q2;
+personalMovieDb.movies[q3] = q4;
+
+console.log(personalMovieDb.movies);
