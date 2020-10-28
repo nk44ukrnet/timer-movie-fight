@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const someObj = {
+        name: 'someName',
+        width: 1024,
+        height: 768,
+        colors: {
+            border: 'black',
+            bg: 'red'
+        },
+        makeTest(){
+          console.log('test');
+        }
+    };
+    let counter = 0;
+    for(let key in someObj) {
+        if(typeof(someObj[key]) === 'object') {
+            for(let i in someObj[key]) {
+                console.log(`Inner Object key is ${i} - ${someObj[key][i]}`);
+//                counter++;
+            }
+        } else {
+            console.log(`Key is ${key} - ${someObj[key]}`);
+//            counter++;
+        }
+    }
+//    counter = Object.keys(someObj);
+    console.log(Object.keys(someObj));
+
+    const { border, bg } = someObj["colors"];
+</script>
+</body>
+</html>

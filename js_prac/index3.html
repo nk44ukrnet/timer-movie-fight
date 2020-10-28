@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .fafa {
+            width:20px;
+            height: 20px;
+            background-color: #999999;
+        }
+        .jj {
+            width:40px;
+            height: 40px;
+            background-color: orchid;
+        }
+    </style>
+</head>
+<body>
+
+<div id="fafa" class="fafa"></div>
+<script>
+//    let str = 'some';
+//    let strObj = new String(str);
+//        console.log(typeof(str));
+//        console.log(typeof(strObj));
+//
+//    console.dir([1, 2, 3]);
+//let x = 5; alert( x++ );
+let fafa = document.querySelector('#fafa');
+function qq() {
+    return `<div class="jj"></div>`
+}
+fafa.replaceWith(innerHTML = qq());
+</script>
+</body>
+</html>

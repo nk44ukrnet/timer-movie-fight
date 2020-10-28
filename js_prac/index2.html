@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+<body>
+
+<script>
+//    const arr = [1,2,3,6,8];
+////    arr[99] = 0;
+//    arr.forEach(function (item, i, arr) {
+//        console.log(`${i}: ${item} in array: ${arr}`);
+//    });
+//
+//    const str = prompt("", "");
+//    const products = str.split(", ");
+//    console.log(products.join('; '));
+
+    const numbers = {
+        a: 2,
+        b:5,
+        c: {
+            x:7,
+            y:8
+        }
+    };
+
+const add = {
+    d: 17,
+    e: 20,
+    f: {
+        j:11
+    }
+};
+
+const clone = Object.assign({}, add);
+clone.f.j = 'string';
+console.log(add);
+console.log(clone);
+
+const array = ["a", "b"];
+    const newArray = [...array];
+
+    const q = {
+        one: 1,
+        two: 2
+    };
+
+    const newQ = {...q};
+</script>
+</body>
+</html>
