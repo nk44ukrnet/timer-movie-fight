@@ -60,7 +60,7 @@ submit.addEventListener('click', function (e) {
 let currentVal = inp.value;
 let checkBoxYes = document.querySelector('input[type="checkbox"]');
 
-if(currentVal.trim().innerText !== '') {
+if(currentVal.trim() !== '') {
     if(currentVal.length > 21) {
         currentVal = currentVal.slice(0,21) + '...';
     }
@@ -98,7 +98,6 @@ reRenderMovieDb();
 //del item
 promoUl.addEventListener('click', function (event) {
     if(event.target.classList.contains('delete')) {
-        console.log('yes');
         let filmNum = event.target.parentElement.dataset.number;
         movieDB.movies.splice(filmNum, 1);
         event.target.parentElement.remove();
