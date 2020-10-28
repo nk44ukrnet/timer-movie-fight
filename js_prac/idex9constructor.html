@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+function User(name, id) {
+    this.name = name;
+    this.id = id;
+    this.human = true;
+    this.hello = function () {
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+User.prototype.exit = function () {
+    console.log(`User ${this.name} has left`);
+};
+
+const van = new User('van', 28);
+const lex = new User('lex', 20);
+console.log(van);
+console.log(lex);
+</script>
+</body>
+</html>

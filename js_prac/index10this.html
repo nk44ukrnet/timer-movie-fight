@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>PRESS</button>
+
+<script>
+    function mult(num) {
+        return this*num;
+    }
+    const double = mult.bind(2);
+    console.log(double(12));
+
+    const btn = document.querySelector('button');
+
+    btn.addEventListener('click', function () {
+        console.log(this);
+    });
+</script>
+</body>
+</html>
