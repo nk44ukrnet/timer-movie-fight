@@ -26,15 +26,11 @@ const movieDB = {
 
 //sort movies
 
-
-
 //remove ads
 const promoImg = document.querySelectorAll('.promo__adv img');
 promoImg.forEach( (item) => {
    item.remove();
 });
-// const promoAdv = document.querySelector('.promo__adv');
-// promoAdv.remove();
 
 //change genre
 const genre = document.querySelector('.promo__genre');
@@ -76,11 +72,6 @@ if(currentVal.trim() !== '') {
     checkBoxYes.checked = false;
 });
 
-// function addToUlList(name) {
-//  return ` <li class="promo__interactive-item">${name}
-//                             <div class="delete"></div>
-//                         </li>`
-// }
 function reRenderMovieDb() {
     const {movies} = movieDB;
     promoUl.innerHTML = '';
@@ -103,13 +94,4 @@ promoUl.addEventListener('click', function (event) {
         event.target.parentElement.remove();
         reRenderMovieDb();
     }
-    // const delItem = document.querySelectorAll('.delete');
-    // delItem.forEach(curEl => {
-    //     curEl.addEventListener('click', function (e) {
-    //         let filmNum = curEl.parentElement.dataset.number;
-    //         movieDB.movies.splice(filmNum, 1);
-    //         curEl.parentElement.remove();
-    //         reRenderMovieDb();
-    //     })
-    //});
 });
