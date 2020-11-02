@@ -7,7 +7,62 @@
 <body>
 
 <script>
-    
+    'use strict';
+
+    // console.log('Accessing data...');
+    //
+    // const req = new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //         console.log('Preparing data...');
+    //
+    //         const product = {
+    //             name: 'a1',
+    //             price: 2000,
+    //         };
+    //         resolve(product);
+    //     }, 2000);
+    // });
+    //
+    // req.then(() => {
+    //     setTimeout((product) => {
+    //         product.status = 'order';
+    //         console.log(product);
+    //     }, 2000);
+    // });
+    //
+    // req.then((product) => {
+    //     const req2 = new Promise((resolve, reject) => {
+    //         setTimeout(() => {
+    //             product.status = 'order';
+    //             resolve(product);
+    //         }, 1000)
+    //     });
+    //
+    //     req2.then(data=> {
+    //         console.log(data);
+    //     })
+    // });
+    //
+    const test = time => {
+      return new Promise((resolve)=> {
+            setTimeout(()=> resolve(), time);
+        })
+    };
+
+    // test(1000).then(()=> {console.log('1000 ms')});
+    // test(2000).then(()=> {console.log('2000 ms')});
+
+    // Promise.all([test(1000), test(2000)]).then(()=>{
+    //     console.log('all');
+    // });
+
+
+    // RACE - fires when 1st promise is done
+    Promise.race([test(1000), test(2000)]).then(()=>{
+        console.log('all');
+    });
+
+
 </script>
 </body>
 </html>
