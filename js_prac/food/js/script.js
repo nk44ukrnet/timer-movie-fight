@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             days = Math.floor(t / (1000 * 60 * 60 * 24)),
             hours = Math.floor((t / (1000 * 60 * 60) % 24)),
             minutes = Math.floor((t / 1000 / 60) % 60),
-            seconds = Math.floor((t / 1000 ) % 60);
+            seconds = Math.floor((t / 1000) % 60);
         return {
             'total': t,
             'days': days,
@@ -214,6 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //version2
 
     const menuField = document.querySelector('.menu__field .container');
+
     class MenuesClass {
         constructor(img, title, desc, price, append, transfer = 1, ...classes) {
             this.img = img;
@@ -227,9 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
             this.changeToUAH();
             this.insertToThePage();
         }
-        changeToUAH(){
+
+        changeToUAH() {
             this.price = this.price * this.transfer;
         }
+
         insertToThePage() {
             this.append.innerHTML += `
             <div class="menu__item">
@@ -245,13 +248,14 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
     }
+
     const good1 = new MenuesClass(
         'img/tabs/vegy.jpg',
         'Меню "Фитнес"',
         'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
         '229',
         menuField
-        );
+    );
     const good2 = new MenuesClass(
         'img/tabs/elite.jpg',
         'Меню “Премиум”',

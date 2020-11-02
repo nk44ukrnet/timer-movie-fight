@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d110c3ca-d2dc-4991-bbc4-36ccfea2467c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_prac/index13json.html" afterPath="$PROJECT_DIR$/js_prac/index13json.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +63,8 @@
       <file leaf-file-name="index13json.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js_prac/index13json.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+            <state relative-caret-position="269">
+              <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -216,7 +217,7 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="164" />
+    <option name="y" value="154" />
     <option name="width" value="1365" />
     <option name="height" value="884" />
   </component>
@@ -254,7 +255,7 @@
               <item name="test" type="b2602c69:ProjectViewProjectNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="js_prac" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="food" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,12 +339,12 @@
       <workItem from="1603277917940" duration="13193000" />
       <workItem from="1603698393173" duration="21681000" />
       <workItem from="1603878136449" duration="21520000" />
-      <workItem from="1604307795088" duration="12669000" />
+      <workItem from="1604307795088" duration="13542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194600000" />
+    <option name="totallyTimeSpent" value="195473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,7 +356,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="164" width="1365" height="884" extended-state="0" />
+    <frame x="0" y="154" width="1365" height="884" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18209408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -804,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js_prac/index13json.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="269">
+          <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
           <folding />
         </state>
       </provider>
