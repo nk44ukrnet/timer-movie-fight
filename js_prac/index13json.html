@@ -6,6 +6,11 @@
 </head>
 <body>
 
+<p>R</p>
+<input type="text" id="rub">
+<p>SD</p>
+<input type="text" id="usd">
+
 <script>
     'use strict';
 
@@ -20,6 +25,35 @@
     const clone = JSON.parse(JSON.stringify(personal));
     console.log(clone);
 
+const inputRub = document.querySelector('#rub'),
+    inputUSD = document.querySelector('#usd');
+
+inputRub.addEventListener('input',  ()=> {
+    const request = new XMLHttpRequest();
+
+    //request.open(method GET/POST, url, async = true by default, login, password);
+    request.open('GET', 'js/index13json.1json');
+    request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    //request.send(body); v POST. v GET body net
+    request.send();
+    //status 404, 0, 200, 403 etc.
+    //statusText - text description from server 201 - created
+    //response - response from server;
+    //readyState - current ready state:0,1,2,3,4. 0=UNSET,1=OPEN,2,HEADERS_RECEIVED,3=LOADING,4=DONE
+
+//    request.addEventListener('readystatechange', ()=> {
+    request.addEventListener('load', ()=> {
+//        if(request.readyState === 4 && request.status === 200) {
+        if(request.status === 200) {
+            console.log(request.response);
+            const data = JSON.parse(request.response);
+            inputUSD.value = (+inputRub.value / +data.current.usd).toFixed(2);
+        } else {
+            inputUSD.value = 'Something went wrong';
+        }
+    });
+
+});
 
 </script>
 </body>
