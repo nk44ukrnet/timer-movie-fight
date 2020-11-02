@@ -362,4 +362,8 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }, 4000)
     }
+    fetch('js/db.json')
+        .then(data => data.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err));
 });
