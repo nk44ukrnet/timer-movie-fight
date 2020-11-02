@@ -8,17 +8,53 @@
 <button>PRESS</button>
 
 <script>
+    function sayName() {
+        console.log(this);
+        console.log(this.name);
+//        console.log(this.name, surname);
+    }
+    const user = {
+        name: 'username'
+    };
+    console.log(sayName.call(user)); //func.call(user, 'string2)
+    console.log(sayName.apply(user)); //func.apply(user, ['data1'];
+
+
+function count(num) {
+    return this*num;
+}
+
+const double2 = count.bind(2);
+console.log(double2(3));
+console.log(double2(13));
+
     function mult(num) {
         return this*num;
     }
     const double = mult.bind(2);
-    console.log(double(12));
+//    console.log(double(12));
 
     const btn = document.querySelector('button');
 
     btn.addEventListener('click', function () {
         console.log(this);
+        this.style.backgroundColor = 'pink';
     });
+
+    const obj = {
+        num:5,
+        sayNumber(){
+            const say = () => {
+                console.log(this.num);
+            };
+            say();
+        }
+    };
+    obj.sayNumber();
+
+    const double3 = (a) => a*2;
+
+
 </script>
 </body>
 </html>
