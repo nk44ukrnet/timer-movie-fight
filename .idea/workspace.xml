@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d110c3ca-d2dc-4991-bbc4-36ccfea2467c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grid/test-schedule-exact.html" afterPath="$PROJECT_DIR$/grid/test-schedule-exact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_prac/food/index.html" afterPath="$PROJECT_DIR$/js_prac/food/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_prac/food/js/script.js" afterPath="$PROJECT_DIR$/js_prac/food/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js_prac/index10this.html" afterPath="$PROJECT_DIR$/js_prac/index10this.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +20,7 @@
       <file leaf-file-name="grid-test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grid/grid-test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
+            <state relative-caret-position="0">
               <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding />
             </state>
@@ -53,18 +56,48 @@
       <file leaf-file-name="test-schedule-exact.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grid/test-schedule-exact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1922">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="202">
+              <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index10this.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js_prac/index10this.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js_prac/food/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="362">
+              <caret line="214" column="63" lean-forward="false" selection-start-line="214" selection-start-column="60" selection-end-line="214" selection-end-column="63" />
+              <folding>
+                <element signature="e#13897#13904#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js_prac/food/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="254" column="34" lean-forward="true" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
+              <folding>
+                <marker date="1604313994377" expanded="true" signature="7667:7691" ph="..." />
+                <marker date="1604313994377" expanded="true" signature="7667:7759" ph="..." />
+                <marker date="1604313994377" expanded="true" signature="7667:7820" ph="..." />
+                <marker date="1604313994377" expanded="true" signature="7667:8106" ph="..." />
+                <marker date="1604313994377" expanded="true" signature="7931:8087" ph="..." />
+                <marker date="1604313994377" expanded="true" signature="7973:8034" ph="..." />
+                <marker date="1604313994377" expanded="true" signature="7973:8069" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index11classes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js_prac/index11classes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -83,9 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>card-body&quot;</find>
-      <find>//</find>
-      <find>рекла</find>
       <find>комедия</find>
       <find>promo__genre</find>
       <find>jpg</find>
@@ -113,6 +143,9 @@
       <find>data-modal</find>
       <find>связ</find>
       <find>times</find>
+      <find>container</find>
+      <find>desc</find>
+      <find>menu__field</find>
     </findStrings>
     <replaceStrings>
       <replace>items</replace>
@@ -129,8 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/timer.html" />
-        <option value="$PROJECT_DIR$/js/timer.js" />
         <option value="$PROJECT_DIR$/timer/script/index.js" />
         <option value="$PROJECT_DIR$/timer/script/timer.js" />
         <option value="$PROJECT_DIR$/timer/css.css" />
@@ -176,10 +207,12 @@
         <option value="$PROJECT_DIR$/js_prac/index7dataAttr.html" />
         <option value="$PROJECT_DIR$/js_prac/index7date.html" />
         <option value="$PROJECT_DIR$/js_prac/index8clienX.html" />
-        <option value="$PROJECT_DIR$/js_prac/food/index.html" />
-        <option value="$PROJECT_DIR$/js_prac/food/js/script.js" />
         <option value="$PROJECT_DIR$/js_prac/idex9constructor.html" />
         <option value="$PROJECT_DIR$/js_prac/index10this.html" />
+        <option value="$PROJECT_DIR$/grid/test-schedule-exact.html" />
+        <option value="$PROJECT_DIR$/js_prac/index11classes.html" />
+        <option value="$PROJECT_DIR$/js_prac/food/index.html" />
+        <option value="$PROJECT_DIR$/js_prac/food/js/script.js" />
       </list>
     </option>
   </component>
@@ -206,7 +239,6 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-34" />
     <option name="y" value="164" />
     <option name="width" value="1365" />
     <option name="height" value="884" />
@@ -336,12 +368,12 @@
       <workItem from="1603277917940" duration="13193000" />
       <workItem from="1603698393173" duration="21681000" />
       <workItem from="1603878136449" duration="21520000" />
-      <workItem from="1604307795088" duration="1594000" />
+      <workItem from="1604307795088" duration="6330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183525000" />
+    <option name="totallyTimeSpent" value="188261000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,7 +385,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-34" y="164" width="1365" height="884" extended-state="0" />
+    <frame x="0" y="164" width="1365" height="884" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18209408" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -408,18 +440,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/js_prac/index10this.html</url>
+          <line>47</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grid/sass/99grid2.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grid/test-schedule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -583,6 +616,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1116">
           <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -626,6 +660,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="257" column="13" lean-forward="false" selection-start-line="257" selection-start-column="13" selection-end-line="257" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,6 +717,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="730" column="2" lean-forward="true" selection-start-line="730" selection-start-column="2" selection-end-line="730" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -703,20 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
           <caret line="57" column="21" lean-forward="true" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js_prac/food/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js_prac/food/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="293" column="56" lean-forward="false" selection-start-line="293" selection-start-column="56" selection-end-line="293" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -746,7 +768,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grid/grid-test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="0">
           <caret line="9" column="6" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
           <folding />
         </state>
@@ -759,19 +781,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grid/test-schedule-exact.html">
+    <entry file="file://$PROJECT_DIR$/js_prac/index10this.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1922">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        <state relative-caret-position="455">
+          <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js_prac/index10this.html">
+    <entry file="file://$PROJECT_DIR$/js_prac/index11classes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="23" column="44" lean-forward="false" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid/test-schedule-exact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="52" column="22" lean-forward="false" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_prac/food/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="214" column="63" lean-forward="false" selection-start-line="214" selection-start-column="60" selection-end-line="214" selection-end-column="63" />
+          <folding>
+            <element signature="e#13897#13904#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js_prac/food/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="254" column="34" lean-forward="true" selection-start-line="254" selection-start-column="34" selection-end-line="254" selection-end-column="34" />
+          <folding>
+            <marker date="1604313994377" expanded="true" signature="7667:7691" ph="..." />
+            <marker date="1604313994377" expanded="true" signature="7667:7759" ph="..." />
+            <marker date="1604313994377" expanded="true" signature="7667:7820" ph="..." />
+            <marker date="1604313994377" expanded="true" signature="7667:8106" ph="..." />
+            <marker date="1604313994377" expanded="true" signature="7931:8087" ph="..." />
+            <marker date="1604313994377" expanded="true" signature="7973:8034" ph="..." />
+            <marker date="1604313994377" expanded="true" signature="7973:8069" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
