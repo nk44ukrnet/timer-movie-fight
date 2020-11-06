@@ -13,6 +13,7 @@
       <change afterPath="$PROJECT_DIR$/index15fetchAPI.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index16arrayMethods.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index17localStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index18regexp.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index4.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index5classlist.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/index6setTimeout.html" afterDir="false" />
@@ -30,11 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index17localStorage.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index17localStorage.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index17localStorage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="359">
+              <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index18regexp.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index18regexp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -56,6 +66,7 @@
       <list>
         <option value="$PROJECT_DIR$/food/js/script.js" />
         <option value="$PROJECT_DIR$/index17localStorage.html" />
+        <option value="$PROJECT_DIR$/index18regexp.html" />
       </list>
     </option>
   </component>
@@ -74,8 +85,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="190" />
+    <option name="x" value="30" />
+    <option name="y" value="205" />
     <option name="width" value="1415" />
     <option name="height" value="740" />
   </component>
@@ -128,15 +139,15 @@
       <option name="presentableId" value="Default" />
       <updated>1604566249900</updated>
       <workItem from="1604566251288" duration="922000" />
-      <workItem from="1604673491673" duration="30000" />
+      <workItem from="1604673491673" duration="3336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="952000" />
+    <option name="totallyTimeSpent" value="4258000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="152" width="1132" height="592" extended-state="0" />
+    <frame x="24" y="164" width="1132" height="592" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25466418" />
@@ -188,8 +199,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index17localStorage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="359">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index18regexp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
         </state>
       </provider>
     </entry>

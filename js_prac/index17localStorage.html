@@ -5,9 +5,50 @@
     <title>Title</title>
 </head>
 <body>
-
+<form id="form">
+    <input type="text" id="id1"><br>
+    <input type="checkbox" id="id3"><br>
+    <button id="btn">BTN</button>
+    <br>
+    <button id="change">change color</button>
+</form>
 <script>
-    
+    const form = document.querySelector('#form'),
+        id1 = document.querySelector('#id1'),
+        checkbox = document.querySelector('#id3'),
+        btn = document.querySelector('#btn'),
+        color = document.querySelector('#change');
+
+    if(localStorage.getItem('isChecked')) {
+        checkbox.checked = true;
+    }
+    if(localStorage.getItem('bg') === 'changed'){
+        form.style.backgroundColor = 'pink';
+    }
+
+    checkbox.addEventListener('change', ()=> {
+        localStorage.setItem('isChecked', true);
+    });
+    form.addEventListener('click', (e)=> e.preventDefault());
+    color.addEventListener('click', ()=>{
+        if(localStorage.getItem('bg') === 'changed'){
+            localStorage.removeItem('bg');
+            form.style.backgroundColor = 'white';
+        } else {
+           localStorage.setItem('bg', 'changed');
+           form.style.backgroundColor = 'pink';
+        }
+    });
+
+    const person = {
+        name: 'Al',
+        age: 25
+    };
+
+    const serializedPerson = JSON.stringify(person);
+    localStorage.setItem('alex', serializedPerson);
+
+    console.log(JSON.parse(localStorage.getItem('alex')));
 </script>
 </body>
 </html>
