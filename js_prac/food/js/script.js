@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const modalTimerId = setTimeout(openModal, 15000);
+    // const modalTimerId = setTimeout(openModal, 15000);
 
     function showModalByScroll() {
         if ((window.pageYOffset + document.documentElement.clientHeight) >= document.documentElement.scrollHeight) {
@@ -247,7 +247,51 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const good1 = new MenuesClass(
+    const getResource = async (url) => {
+        const res = await fetch(url);
+        if (!res.ok) {
+            throw new Error(`Could not fetch ${url}, status: ${res.status}`);
+        }
+        return await res.json();
+    };
+
+
+    // getResource('http://localhost:3000/menu')
+    //     .then(data => {
+    //        data.forEach(({img, title, descr, price}) => {
+    //            new MenuesClass(img, title, descr, price, menuField);
+    //        });
+    //     });
+
+    axios.get('http://localhost:3000/menu')
+        .then(data => {
+            data.data.forEach(({img, title, descr, price}) => {
+                new MenuesClass(img, title, descr, price, menuField);
+            });
+        });
+
+    /*  getResource('http://localhost:3000/menu')
+          .then(data => createCard(data));
+
+      function createCard(data) {
+          data.forEach(({img, altimg, title, descr, price}) => {
+              const element = document.createElement('div');
+              element.classList.add('menu__item');
+              element.innerHTML = `
+                 <img src="${img}" alt="${altimg}">
+              <h3 class="menu__item-subtitle">${title}</h3>
+              <div class="menu__item-descr">${descr}</div>
+              <div class="menu__item-divider"></div>
+              <div class="menu__item-price">
+              <div class="menu__item-cost">Ціна:</div>
+              <div class="menu__item-total"><span>${price}</span> грн/день</div>
+              </div>
+              `;
+              menuField.append(element);
+          })
+      }*/
+
+    /*const good1 = new MenuesClass(
         'img/tabs/vegy.jpg',
         'Меню "Фитнес"',
         'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
@@ -267,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
         '430',
         menuField
-    );
+    );*/
 
     //forms
 
@@ -279,10 +323,22 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     forms.forEach(item => {
-        postData(item);
+        bindPostData(item);
     });
 
-    function postData(form) {
+    const postData = async (url, data) => {
+        const res = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        return await res.json();
+    };
+
+
+    function bindPostData(form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
@@ -303,18 +359,16 @@ document.addEventListener('DOMContentLoaded', () => {
             formData.forEach(function (value, key) {
                 object[key] = value;
             });
+            //const json = JSON.stringify(Object.fromEntries(formData.entries()));
+
+
             // console.log(object);
             // const json = JSON.stringify(object);
 
             // request.send(json);
             // request.send(formData);
-            fetch('server.php', {
-                method: "POST",
-                headers: {
-                    'Content-type': 'application/json'
-                },
-                body: JSON.stringify(object)
-            }).then(data => data.text())
+
+            postData('http://localhost:3000/requests', object)
                 .then(data => {
                     console.log(data);
                     showThanksModal(message.success);
@@ -362,8 +416,212 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }, 4000)
     }
+
     fetch('js/db.json')
         .then(data => data.json())
         .then(data => console.log(data))
         .catch(err => console.log(err));
+
+
+    //slider
+
+    /*let prevSlide = document.querySelector('.offer__slider-prev'),
+        nextSlide = document.querySelector('.offer__slider-next'),
+        offerSlide = document.querySelectorAll('.offer__slide'),
+        current = 0,
+        total = 0,
+        currentEl = document.querySelector('#current'),
+        totalEl = document.querySelector('#total');
+
+    function sliderInit() {
+        total = offerSlide.length -1;
+        if(offerSlide.length < 10) {
+            totalEl.innerHTML = `0${total +1}`;
+        } else {
+            totalEl.innerHTML = `${total +1}`;
+        }
+        currentEl.innerHTML = `0${current + 1}`;
+        hideAllSlides();
+        offerSlide[0].classList.remove('hide');
+        offerSlide[0].classList.add('show');
+    }
+    sliderInit();
+    function hideAllSlides() {
+        for(let item of offerSlide) {
+            item.classList.remove('show');
+            item.classList.add('hide');
+        }
+    }
+    function nextSlideRun() {
+        hideAllSlides();
+        current++;
+        if(current > total) {
+            current = 0;
+            console.log(`Current: ${current}, type:${typeof current}`);
+        }
+        offerSlide[current].classList.remove('hide');
+        offerSlide[current].classList.add('show');
+        compareCurrent();
+    }
+    function prevSlideRun() {
+        hideAllSlides();
+        current--;
+        if(current < 0) {
+            current = total;
+        }
+        offerSlide[current].classList.add('show');
+        offerSlide[current].classList.remove('hide');
+        compareCurrent();
+    }
+    function compareCurrent() {
+        if(current >= 10) {
+            currentEl.innerHTML = `${current +1}`;
+        } else {
+            currentEl.innerHTML = `0${current +1}`;
+        }
+    }
+    nextSlide.addEventListener('click', nextSlideRun);
+    prevSlide.addEventListener('click', prevSlideRun);*/
+
+    const slides = document.querySelectorAll('.offer__slide'),
+        // slider = document.querySelector('.offer__slider-inner'),
+        prev = document.querySelector('.offer__slider-prev'),
+        next = document.querySelector('.offer__slider-next'),
+        total = document.querySelector('#total'),
+        current = document.querySelector('#current'),
+        sliderWrapper = document.querySelector('.offer__slider-wrapper'),
+        slidesField = document.querySelector('.offer__slider-inner'),
+        width = window.getComputedStyle(sliderWrapper).width;
+    let slideIndex = 1;
+    let offset = 0;
+
+    if (slides.length < 10) {
+        total.textContent = `0${slides.length}`;
+        current.textContent = `0${slideIndex}`;
+    } else {
+        total.textContent = slides.length;
+        current.textContent = slideIndex;
+    }
+
+    slidesField.style.width = 100 * slides.length + '%';
+    slidesField.style.display = 'flex';
+    slidesField.style.transition = '0.5s all';
+
+    sliderWrapper.style.overflow = 'hidden';
+
+    slides.forEach(slide => {
+        slide.style.width = width;
+    });
+
+    // slider.style.position = 'relative';
+
+    const indicators = document.createElement('ol'),
+        dots = [];
+    indicators.classList.add('carousel-indicators');
+    sliderWrapper.append(indicators);
+    for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('li');
+        dot.setAttribute('data-slide-to', i + 1);
+        dot.classList.add('dot');
+        indicators.append(dot);
+        if (i == 0) {
+            dot.style.opacity = 1;
+        }
+        dots.push(dot);
+    }
+
+    next.addEventListener('click', () => {
+        if (offset == parseInt(width) * (slides.length - 1)) {
+            offset = 0;
+        } else {
+            offset += parseInt(width); //+width.slice(0, width.length-2);
+        }
+        slidesField.style.transform = `translateX(-${offset}px)`;
+
+        if (slideIndex == slides.length) {
+            slideIndex = 1;
+        } else {
+            slideIndex++;
+        }
+
+        if (slides.length < 10) {
+            current.textContent = `0${slideIndex}`;
+        } else {
+            current.textContent = slideIndex;
+        }
+        dots.forEach(dot => dot.style.opacity = '0.5');
+        dots[slideIndex - 1].style.opacity = 1;
+    });
+
+    prev.addEventListener('click', () => {
+        if (offset == 0) {
+            offset = parseInt(width) * (slides.length - 1);
+        } else {
+            offset -= parseInt(width); //+width.slice(0, width.length-2);
+        }
+        slidesField.style.transform = `translateX(-${offset}px)`;
+
+        if (slideIndex == 1) {
+            slideIndex = slides.length;
+        } else {
+            slideIndex--;
+        }
+        if (slides.length < 10) {
+            current.textContent = `0${slideIndex}`;
+        } else {
+            current.textContent = slideIndex;
+        }
+        dots.forEach(dot => dot.style.opacity = '0.5');
+        dots[slideIndex - 1].style.opacity = 1;
+    });
+
+    dots.forEach(dot=>{
+        dot.addEventListener('click', e=>{
+            const slideTo = e.target.getAttribute('data-slide-to');
+            slideIndex = +slideTo;
+
+            offset = parseInt(width) * (slideTo - 1);
+
+            slidesField.style.transform = `translateX(-${offset}px)`;
+
+            if (slides.length < 10) {
+                current.textContent = `0${slideIndex}`;
+            } else {
+                current.textContent = slideIndex;
+            }
+
+            dots.forEach(dot => dot.style.opacity = '0.5');
+            dots[slideIndex - 1].style.opacity = 1;
+
+        })
+    })
+    //dots
+    /*let indicators = document.createElement('div');
+    indicators.classList.add('carousel-indicators');
+    sliderWrapper.append(indicators);
+    for(let i = 0; i< slides.length; i++) {
+        let newDot = document.createElement('div');
+        newDot.classList.add('dot');
+        newDot.setAttribute('data-dot', i+1);
+        indicators.append(newDot);
+    }
+    sliderWrapper.addEventListener('click', e=>{
+        let target = e.target;
+        if(target.classList.contains('dot')) {
+            let dataAttr = target.dataset.dot;
+            if(slideIndex !== +dataAttr) {
+                slideIndex = +dataAttr;
+                    offset = parseInt(width) * +dataAttr;
+                slidesField.style.transform = `translateX(${-offset}px)`;
+
+                if(slides.length < 10) {
+                    current.textContent = `0${slideIndex}`;
+                } else {
+                    current.textContent = slideIndex;
+                }
+            }
+        }
+    })*/
+
+    //end of slider
 });
