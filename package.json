@@ -19,5 +19,10 @@
   "homepage": "https://github.com/nk44ukrnet/timerProject#readme",
   "dependencies": {
     "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-react": "^7.21.5"
   }
 }
