@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nk44ukrnet/timerProject/issues"
   },
-  "homepage": "https://github.com/nk44ukrnet/timerProject#readme"
+  "homepage": "https://github.com/nk44ukrnet/timerProject#readme",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  }
 }

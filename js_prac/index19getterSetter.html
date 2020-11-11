@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Getter Setter</title>
+</head>
+<body>
+
+<script>
+
+    const person = {
+        name: 'Al',
+        age: 25,
+
+        get userAge() {
+            return this.age;
+        },
+        set userAge(num) {
+            return this.age = num;
+        }
+    };
+
+    console.log(person.userAge);
+    person.userAge = 33;
+</script>
+</body>
+</html>

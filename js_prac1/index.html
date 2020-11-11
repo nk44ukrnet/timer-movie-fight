@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Send certificate IES</title>
+</head>
+<body style="overflow-x: hidden">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-sm-12" style="margin-top: 10vh;">
+            <form>
+                <div class="form-group">
+                    <h3>Відправити сертифікат за 04.11.20</h3>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="ПІБ">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <button id="submit" name="submit" class="btn btn-primary">Send e-mail</button>
+                </div>
+                <div class="form-group">
+                    <button id="startSendingEmails" style="display:none;">Start sending emails >></button>
+                </div>
+                <div class="form-group alert alert-success">
+                    Email status:
+                    <p id="status" class=""></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br><br>
+
+
+<script>
+    const names = [
+        'Стем школа INVENTOR',
+    ];
+    const emails = [
+        'tsvynakhidnyk@gmail.com',
+    ];
+
+    let min = 0,
+        max = names.length - 1,
+        form = document.querySelector('form'),
+        name = document.querySelector('#name'),
+        email = document.querySelector('#email'),
+        submit = document.querySelector('#submit'),
+        start = document.querySelector('#startSendingEmails'),
+        status = document.querySelector('#status'),
+        scriptURL = 'certificate1.php';
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        console.log(`sending email to ${emails[min]}... [${min}/${max}]`);
+        status.innerHTML = `sending email to ${emails[min]}... [${min}/${max}]`;
+
+        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+            .then(response => response.text())
+            .then(response => {
+                console.log(response)
+                status.innerHTML = response;
+                form.reset();
+            })
+            .catch(err => console.log(err));
+    });
+    start.addEventListener('click', startSending);
+
+    function startSending() {
+        let interval = setInterval(() => {
+            if (min > max) {
+                clearInterval(interval);
+                console.log('Finished');
+                return false;
+            } else {
+                name.value = names[min];
+                email.value = emails[min];
+                name.value = name.value.trim();
+                email.value = email.value.trim();
+                submit.click();
+                min++;
+            }
+        }, 1500);
+        start.remove();
+    }
+
+
+</script>
+</body>
+</html>

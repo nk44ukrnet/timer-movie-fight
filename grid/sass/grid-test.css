@@ -1,0 +1,15 @@
+.container {
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    background-color: #ededed;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+}
