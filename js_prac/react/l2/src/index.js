@@ -2,9 +2,9 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// import App from './components/app/';
+import App from './components/app/';
 
-class WhoAmI extends Component {
+/*class WhoAmI extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,9 +29,9 @@ class WhoAmI extends Component {
             </>
         )
     }
-}
+}*/
 
-const All = () => {
+/*const All = () => {
     return (
         <>
             <WhoAmI name="John" surname="Smith" link="google.com"/>
@@ -39,9 +39,9 @@ const All = () => {
             <WhoAmI name="Dath" surname="Zoom" link="google3.com"/>
         </>
     )
-}
+}*/
 
-// ReactDOM.render(<App/>, document.getElementById('root'));
-ReactDOM.render(<All/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
+// ReactDOM.render(<All/>, document.getElementById('root'));
 
 
