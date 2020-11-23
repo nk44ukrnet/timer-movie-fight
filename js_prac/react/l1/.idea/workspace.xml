@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbd095bf-54ca-490d-a50e-b16cf2d53ca6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/calculator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/modules/timer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/js/services/services.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../food/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../idex9constructor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index10this.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index11classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index14promise.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index15fetchAPI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index16arrayMethods.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index17localStorage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index18regexp.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index20incapsulation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index22commonJs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index23jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index24functionGenerator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index25animations.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index26eventloop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index5classlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index6setTimeout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../index8clienX.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index21.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index21app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index22common1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index22common2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index22common3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index22common4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index23jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/index5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../js/touch_events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/praq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webpack/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webpack/src/index22common2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../webpack/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../clean-up/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../clean-up/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1kMdVli75LC80BfXCrVrd9oflwI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbd095bf-54ca-490d-a50e-b16cf2d53ca6" name="Default Changelist" comment="" />
+      <created>1605514419046</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605514419046</updated>
+      <workItem from="1605514420235" duration="117000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1605514521174">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1605514521174" />
+  </component>
+</project>
