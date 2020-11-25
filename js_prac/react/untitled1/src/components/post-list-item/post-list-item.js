@@ -2,7 +2,7 @@ import React from 'react';
 import './post-list-item.css';
 
 export default class PostListItem extends React.Component {
-    constructor(props) {
+    /*constructor(props) {
         super(props);
         this.state = {
             important: false,
@@ -10,8 +10,8 @@ export default class PostListItem extends React.Component {
         }
         this.onImportant = this.onImportant.bind(this);
         this.onLike = this.onLike.bind(this);
-    }
-    onImportant(){
+    }*/
+/*    onImportant(){
         this.setState(({important}) => ({
             important: !important
         }))
@@ -20,10 +20,10 @@ export default class PostListItem extends React.Component {
         this.setState(({like}) => ({
             like: !like
         }))
-    }
+    }*/
     render() {
-        const {label, onDelete} = this.props;
-        const {important, like} = this.state;
+        const {label, onDelete, onToggleImportant, onToggleLiked, important, like} = this.props;
+        // const {important, like} = this.state;
         let classNames = 'app-list-item d-flex justify-content-between';
         if (important) {
             classNames += ' important';
@@ -33,11 +33,11 @@ export default class PostListItem extends React.Component {
         }
         return (
             <div className={classNames}>
-            <span className="app-list-item-label" onClick={this.onLike}>
+            <span className="app-list-item-label" onClick={onToggleLiked}>
                 {label}
             </span>
                 <div className="d-flex justify-content-center align-items-center">
-                    <button className="btn-star btn-sm" onClick={this.onImportant}><i className="fa fa-star"></i></button>
+                    <button className="btn-star btn-sm" onClick={onToggleImportant}><i className="fa fa-star"></i></button>
                     <button className="btn-trash btn-sm" onClick={onDelete}><i className="fa fa-trash"></i></button>
                     <i className="fa fa-heart"></i>
                 </div>
