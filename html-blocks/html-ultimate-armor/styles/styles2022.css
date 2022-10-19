@@ -1,0 +1,1159 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*# sourceMappingURL=normalize.min.css.map */
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa09eDukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDI1apSCOBt_aeQQ7ftydoaMWQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa0reHukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa0gebukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bai Jamjuree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/baijamjuree/v11/LDIqapSCOBt_aeQQ7ftydoa05efukw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v24/z7NOdRfiaC4Vd8hhoPzfb5vBTP1d7auh.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v24/z7NOdRfiaC4Vd8hhoPzfb5vBTP2D6quh.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v24/z7NOdRfiaC4Vd8hhoPzfb5vBTP266quh.ttf) format('truetype');
+}
+:root {
+  --light: #fff;
+  --dark: #0a0404;
+  --dark1: hsla(345, 5%, 36%, 0.5);
+  --blue: hsl(326, 91%, 52%);
+  --blue-alter: hsl(326, 61%, 52%);
+  --blue-light: hsla(326, 61%, 52%, 0.6);
+  --blue-light2: hsla(326, 61%, 52%, 0.2);
+  --lh: 150%;
+  --font1: 'Bai Jamjuree', sans-serif;
+  --font2: 'Jura', sans-serif;
+  --transition: all 0.25s linear;
+}
+.text-center {
+  text-align: center;
+}
+.html-blocks-hero,
+.html-blocks-chessboard,
+.html-blocks-info,
+.html-blocks,
+.html-blocks-pricing,
+.html-blocks-products,
+.html-block-contact-hero,
+.html-block-contact,
+.html-blocks-cars-cards,
+.html-blocks-definition,
+.ua-hero {
+  font-family: var(--font1);
+  font-size: 16px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero,
+  .html-blocks-chessboard,
+  .html-blocks-info,
+  .html-blocks,
+  .html-blocks-pricing,
+  .html-blocks-products,
+  .html-block-contact-hero,
+  .html-block-contact,
+  .html-blocks-cars-cards,
+  .html-blocks-definition,
+  .ua-hero {
+    font-size: 14px;
+  }
+}
+.html-blocks-hero [class*=__container],
+.html-blocks-chessboard [class*=__container],
+.html-blocks-info [class*=__container],
+.html-blocks [class*=__container],
+.html-blocks-pricing [class*=__container],
+.html-blocks-products [class*=__container],
+.html-block-contact-hero [class*=__container],
+.html-block-contact [class*=__container],
+.html-blocks-cars-cards [class*=__container],
+.html-blocks-definition [class*=__container],
+.ua-hero [class*=__container] {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.html-blocks-hero .heading,
+.html-blocks-chessboard .heading,
+.html-blocks-info .heading,
+.html-blocks .heading,
+.html-blocks-pricing .heading,
+.html-blocks-products .heading,
+.html-block-contact-hero .heading,
+.html-block-contact .heading,
+.html-blocks-cars-cards .heading,
+.html-blocks-definition .heading,
+.ua-hero .heading {
+  font-size: 48px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .heading,
+  .html-blocks-chessboard .heading,
+  .html-blocks-info .heading,
+  .html-blocks .heading,
+  .html-blocks-pricing .heading,
+  .html-blocks-products .heading,
+  .html-block-contact-hero .heading,
+  .html-block-contact .heading,
+  .html-blocks-cars-cards .heading,
+  .html-blocks-definition .heading,
+  .ua-hero .heading {
+    font-size: 35px;
+  }
+}
+.html-blocks-hero .heading-2,
+.html-blocks-chessboard .heading-2,
+.html-blocks-info .heading-2,
+.html-blocks .heading-2,
+.html-blocks-pricing .heading-2,
+.html-blocks-products .heading-2,
+.html-block-contact-hero .heading-2,
+.html-block-contact .heading-2,
+.html-blocks-cars-cards .heading-2,
+.html-blocks-definition .heading-2,
+.ua-hero .heading-2 {
+  font-size: 38px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .heading-2,
+  .html-blocks-chessboard .heading-2,
+  .html-blocks-info .heading-2,
+  .html-blocks .heading-2,
+  .html-blocks-pricing .heading-2,
+  .html-blocks-products .heading-2,
+  .html-block-contact-hero .heading-2,
+  .html-block-contact .heading-2,
+  .html-blocks-cars-cards .heading-2,
+  .html-blocks-definition .heading-2,
+  .ua-hero .heading-2 {
+    font-size: 28px;
+  }
+}
+.html-blocks-hero .btn,
+.html-blocks-chessboard .btn,
+.html-blocks-info .btn,
+.html-blocks .btn,
+.html-blocks-pricing .btn,
+.html-blocks-products .btn,
+.html-block-contact-hero .btn,
+.html-block-contact .btn,
+.html-blocks-cars-cards .btn,
+.html-blocks-definition .btn,
+.ua-hero .btn {
+  color: var(--light);
+  text-decoration: none;
+  background: var(--blue-light);
+  padding: 16px 80px;
+  display: inline-block;
+  font-size: 14px;
+  line-height: var(--lh);
+  border: 1px solid var(--light);
+  transition: var(--transition);
+  transform: skew(-21deg);
+}
+.html-blocks-hero .btn:focus,
+.html-blocks-chessboard .btn:focus,
+.html-blocks-info .btn:focus,
+.html-blocks .btn:focus,
+.html-blocks-pricing .btn:focus,
+.html-blocks-products .btn:focus,
+.html-block-contact-hero .btn:focus,
+.html-block-contact .btn:focus,
+.html-blocks-cars-cards .btn:focus,
+.html-blocks-definition .btn:focus,
+.ua-hero .btn:focus,
+.html-blocks-hero .btn:visited,
+.html-blocks-chessboard .btn:visited,
+.html-blocks-info .btn:visited,
+.html-blocks .btn:visited,
+.html-blocks-pricing .btn:visited,
+.html-blocks-products .btn:visited,
+.html-block-contact-hero .btn:visited,
+.html-block-contact .btn:visited,
+.html-blocks-cars-cards .btn:visited,
+.html-blocks-definition .btn:visited,
+.ua-hero .btn:visited {
+  color: var(--light);
+  text-decoration: none;
+}
+.html-blocks-hero .btn:hover,
+.html-blocks-chessboard .btn:hover,
+.html-blocks-info .btn:hover,
+.html-blocks .btn:hover,
+.html-blocks-pricing .btn:hover,
+.html-blocks-products .btn:hover,
+.html-block-contact-hero .btn:hover,
+.html-block-contact .btn:hover,
+.html-blocks-cars-cards .btn:hover,
+.html-blocks-definition .btn:hover,
+.ua-hero .btn:hover {
+  background-color: var(--blue-alter);
+  color: var(--light);
+  text-decoration: none;
+}
+.html-blocks-hero .btn span,
+.html-blocks-chessboard .btn span,
+.html-blocks-info .btn span,
+.html-blocks .btn span,
+.html-blocks-pricing .btn span,
+.html-blocks-products .btn span,
+.html-block-contact-hero .btn span,
+.html-block-contact .btn span,
+.html-blocks-cars-cards .btn span,
+.html-blocks-definition .btn span,
+.ua-hero .btn span {
+  position: relative;
+  display: inline-block;
+  transform: skew(21deg);
+  color: inherit;
+}
+.html-blocks-hero .btn_active,
+.html-blocks-chessboard .btn_active,
+.html-blocks-info .btn_active,
+.html-blocks .btn_active,
+.html-blocks-pricing .btn_active,
+.html-blocks-products .btn_active,
+.html-block-contact-hero .btn_active,
+.html-block-contact .btn_active,
+.html-blocks-cars-cards .btn_active,
+.html-blocks-definition .btn_active,
+.ua-hero .btn_active {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+}
+@media (max-width: 768px) {
+  .html-blocks-hero .btn,
+  .html-blocks-chessboard .btn,
+  .html-blocks-info .btn,
+  .html-blocks .btn,
+  .html-blocks-pricing .btn,
+  .html-blocks-products .btn,
+  .html-block-contact-hero .btn,
+  .html-block-contact .btn,
+  .html-blocks-cars-cards .btn,
+  .html-blocks-definition .btn,
+  .ua-hero .btn {
+    padding: 16px 60px;
+  }
+}
+.html-blocks-hero .font2,
+.html-blocks-chessboard .font2,
+.html-blocks-info .font2,
+.html-blocks .font2,
+.html-blocks-pricing .font2,
+.html-blocks-products .font2,
+.html-block-contact-hero .font2,
+.html-block-contact .font2,
+.html-blocks-cars-cards .font2,
+.html-blocks-definition .font2,
+.ua-hero .font2 {
+  font-family: var(--font2);
+}
+.html-blocks-hero .text-highlight,
+.html-blocks-chessboard .text-highlight,
+.html-blocks-info .text-highlight,
+.html-blocks .text-highlight,
+.html-blocks-pricing .text-highlight,
+.html-blocks-products .text-highlight,
+.html-block-contact-hero .text-highlight,
+.html-block-contact .text-highlight,
+.html-blocks-cars-cards .text-highlight,
+.html-blocks-definition .text-highlight,
+.ua-hero .text-highlight {
+  color: var(--blue);
+}
+.html-blocks-hero .mb4,
+.html-blocks-chessboard .mb4,
+.html-blocks-info .mb4,
+.html-blocks .mb4,
+.html-blocks-pricing .mb4,
+.html-blocks-products .mb4,
+.html-block-contact-hero .mb4,
+.html-block-contact .mb4,
+.html-blocks-cars-cards .mb4,
+.html-blocks-definition .mb4,
+.ua-hero .mb4 {
+  margin-bottom: 40px;
+}
+.html-blocks-hero .contact-form,
+.html-blocks-chessboard .contact-form,
+.html-blocks-info .contact-form,
+.html-blocks .contact-form,
+.html-blocks-pricing .contact-form,
+.html-blocks-products .contact-form,
+.html-block-contact-hero .contact-form,
+.html-block-contact .contact-form,
+.html-blocks-cars-cards .contact-form,
+.html-blocks-definition .contact-form,
+.ua-hero .contact-form {
+  padding: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.html-blocks-hero .contact-form p,
+.html-blocks-chessboard .contact-form p,
+.html-blocks-info .contact-form p,
+.html-blocks .contact-form p,
+.html-blocks-pricing .contact-form p,
+.html-blocks-products .contact-form p,
+.html-block-contact-hero .contact-form p,
+.html-block-contact .contact-form p,
+.html-blocks-cars-cards .contact-form p,
+.html-blocks-definition .contact-form p,
+.ua-hero .contact-form p {
+  margin-bottom: 15px;
+}
+.html-blocks-hero .contact-form input,
+.html-blocks-chessboard .contact-form input,
+.html-blocks-info .contact-form input,
+.html-blocks .contact-form input,
+.html-blocks-pricing .contact-form input,
+.html-blocks-products .contact-form input,
+.html-block-contact-hero .contact-form input,
+.html-block-contact .contact-form input,
+.html-blocks-cars-cards .contact-form input,
+.html-blocks-definition .contact-form input,
+.ua-hero .contact-form input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: var(--dark1);
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .contact-form input[type="submit"],
+.html-blocks-chessboard .contact-form input[type="submit"],
+.html-blocks-info .contact-form input[type="submit"],
+.html-blocks .contact-form input[type="submit"],
+.html-blocks-pricing .contact-form input[type="submit"],
+.html-blocks-products .contact-form input[type="submit"],
+.html-block-contact-hero .contact-form input[type="submit"],
+.html-block-contact .contact-form input[type="submit"],
+.html-blocks-cars-cards .contact-form input[type="submit"],
+.html-blocks-definition .contact-form input[type="submit"],
+.ua-hero .contact-form input[type="submit"] {
+  background-color: var(--dark1);
+  color: var(--light);
+  width: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.html-blocks-hero .custom-form,
+.html-blocks-chessboard .custom-form,
+.html-blocks-info .custom-form,
+.html-blocks .custom-form,
+.html-blocks-pricing .custom-form,
+.html-blocks-products .custom-form,
+.html-block-contact-hero .custom-form,
+.html-block-contact .custom-form,
+.html-blocks-cars-cards .custom-form,
+.html-blocks-definition .custom-form,
+.ua-hero .custom-form {
+  padding: 10px 20px;
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .custom-form button[type="submit"],
+.html-blocks-chessboard .custom-form button[type="submit"],
+.html-blocks-info .custom-form button[type="submit"],
+.html-blocks .custom-form button[type="submit"],
+.html-blocks-pricing .custom-form button[type="submit"],
+.html-blocks-products .custom-form button[type="submit"],
+.html-block-contact-hero .custom-form button[type="submit"],
+.html-block-contact .custom-form button[type="submit"],
+.html-blocks-cars-cards .custom-form button[type="submit"],
+.html-blocks-definition .custom-form button[type="submit"],
+.ua-hero .custom-form button[type="submit"] {
+  padding: 10px 40px;
+  background-color: var(--dark1);
+  color: var(--light);
+  margin-top: 10px;
+  font-family: var(--font2);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px auto 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.html-blocks-hero .custom-form ul,
+.html-blocks-chessboard .custom-form ul,
+.html-blocks-info .custom-form ul,
+.html-blocks .custom-form ul,
+.html-blocks-pricing .custom-form ul,
+.html-blocks-products .custom-form ul,
+.html-block-contact-hero .custom-form ul,
+.html-block-contact .custom-form ul,
+.html-blocks-cars-cards .custom-form ul,
+.html-blocks-definition .custom-form ul,
+.ua-hero .custom-form ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.html-blocks-hero .custom-form .infusion-field,
+.html-blocks-chessboard .custom-form .infusion-field,
+.html-blocks-info .custom-form .infusion-field,
+.html-blocks .custom-form .infusion-field,
+.html-blocks-pricing .custom-form .infusion-field,
+.html-blocks-products .custom-form .infusion-field,
+.html-block-contact-hero .custom-form .infusion-field,
+.html-block-contact .custom-form .infusion-field,
+.html-blocks-cars-cards .custom-form .infusion-field,
+.html-blocks-definition .custom-form .infusion-field,
+.ua-hero .custom-form .infusion-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+.html-blocks-hero .custom-form .infusion-field input,
+.html-blocks-chessboard .custom-form .infusion-field input,
+.html-blocks-info .custom-form .infusion-field input,
+.html-blocks .custom-form .infusion-field input,
+.html-blocks-pricing .custom-form .infusion-field input,
+.html-blocks-products .custom-form .infusion-field input,
+.html-block-contact-hero .custom-form .infusion-field input,
+.html-block-contact .custom-form .infusion-field input,
+.html-blocks-cars-cards .custom-form .infusion-field input,
+.html-blocks-definition .custom-form .infusion-field input,
+.ua-hero .custom-form .infusion-field input {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .custom-form .infusion-field select,
+.html-blocks-chessboard .custom-form .infusion-field select,
+.html-blocks-info .custom-form .infusion-field select,
+.html-blocks .custom-form .infusion-field select,
+.html-blocks-pricing .custom-form .infusion-field select,
+.html-blocks-products .custom-form .infusion-field select,
+.html-block-contact-hero .custom-form .infusion-field select,
+.html-block-contact .custom-form .infusion-field select,
+.html-blocks-cars-cards .custom-form .infusion-field select,
+.html-blocks-definition .custom-form .infusion-field select,
+.ua-hero .custom-form .infusion-field select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--light);
+  border: 1px solid var(--dark1);
+}
+.html-blocks-hero .custom-form .infusion-field input[type="radio"],
+.html-blocks-chessboard .custom-form .infusion-field input[type="radio"],
+.html-blocks-info .custom-form .infusion-field input[type="radio"],
+.html-blocks .custom-form .infusion-field input[type="radio"],
+.html-blocks-pricing .custom-form .infusion-field input[type="radio"],
+.html-blocks-products .custom-form .infusion-field input[type="radio"],
+.html-block-contact-hero .custom-form .infusion-field input[type="radio"],
+.html-block-contact .custom-form .infusion-field input[type="radio"],
+.html-blocks-cars-cards .custom-form .infusion-field input[type="radio"],
+.html-blocks-definition .custom-form .infusion-field input[type="radio"],
+.ua-hero .custom-form .infusion-field input[type="radio"],
+.html-blocks-hero .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-chessboard .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-info .custom-form .infusion-field input[type="checkbox"],
+.html-blocks .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-pricing .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-products .custom-form .infusion-field input[type="checkbox"],
+.html-block-contact-hero .custom-form .infusion-field input[type="checkbox"],
+.html-block-contact .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-cars-cards .custom-form .infusion-field input[type="checkbox"],
+.html-blocks-definition .custom-form .infusion-field input[type="checkbox"],
+.ua-hero .custom-form .infusion-field input[type="checkbox"] {
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+}
+.html-blocks-hero .custom-form .infusion-field .options-container,
+.html-blocks-chessboard .custom-form .infusion-field .options-container,
+.html-blocks-info .custom-form .infusion-field .options-container,
+.html-blocks .custom-form .infusion-field .options-container,
+.html-blocks-pricing .custom-form .infusion-field .options-container,
+.html-blocks-products .custom-form .infusion-field .options-container,
+.html-block-contact-hero .custom-form .infusion-field .options-container,
+.html-block-contact .custom-form .infusion-field .options-container,
+.html-blocks-cars-cards .custom-form .infusion-field .options-container,
+.html-blocks-definition .custom-form .infusion-field .options-container,
+.ua-hero .custom-form .infusion-field .options-container {
+  display: flex;
+  flex-direction: column;
+}
+.html-blocks-hero .group,
+.html-blocks-chessboard .group,
+.html-blocks-info .group,
+.html-blocks .group,
+.html-blocks-pricing .group,
+.html-blocks-products .group,
+.html-block-contact-hero .group,
+.html-block-contact .group,
+.html-blocks-cars-cards .group,
+.html-blocks-definition .group,
+.ua-hero .group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 7px;
+}
+.html-blocks-hero {
+  background-color: #bdbbbb;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  background-attachment: fixed;
+}
+.html-blocks-hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--blue-light2);
+  pointer-events: none;
+}
+.html-blocks-hero.bordered {
+  border-bottom: 10px solid var(--blue);
+}
+.html-blocks-hero__container {
+  padding-top: 150px;
+  padding-bottom: 140px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.html-blocks-hero__text {
+  font-family: var(--font2);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.html-blocks-hero__heading {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  line-height: var(--lh);
+  font-size: 60px;
+}
+.html-blocks-hero__btn:not(:last-child) {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .html-blocks-hero__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  .html-blocks-hero.bordered {
+    border-bottom: 5px solid var(--blue);
+  }
+  .html-blocks-hero__heading {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .html-blocks-hero__heading br {
+    display: none;
+  }
+}
+.html-blocks-chessboard {
+  background-image: linear-gradient(180deg, var(--dark) 0, var(--light) 100%);
+  background-origin: border-box;
+  text-align: center;
+}
+.html-blocks-chessboard__container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.html-blocks-chessboard__heading {
+  color: var(--light);
+  line-height: var(--lh);
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.html-blocks-chessboard__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.html-blocks-chessboard__item {
+  background-color: var(--light);
+  display: flex;
+}
+.html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__img {
+  order: 2;
+}
+.html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__desc {
+  order: 1;
+}
+.html-blocks-chessboard__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.html-blocks-chessboard__img {
+  flex: 1 1 500px;
+  background-color: var(--light);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.html-blocks-chessboard__img_cover {
+  background-size: cover;
+}
+.html-blocks-chessboard__desc {
+  flex: 1 1 500px;
+  padding: 40px;
+}
+.html-blocks-chessboard__icon {
+  width: 100px;
+  height: 100px;
+  background-color: var(--blue);
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.html-blocks-chessboard__icon img,
+.html-blocks-chessboard__icon svg,
+.html-blocks-chessboard__icon picture {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  object-position: center center;
+}
+.html-blocks-chessboard__icon svg {
+  fill: var(--light);
+}
+.html-blocks-chessboard__title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: var(--lh);
+}
+.html-blocks-chessboard__text {
+  font-family: var(--font2);
+}
+.html-blocks-chessboard__btn {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .html-blocks-chessboard__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .html-blocks-chessboard__heading {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .html-blocks-chessboard__holder {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .html-blocks-chessboard__item {
+    background-color: var(--light);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__img {
+    order: 1;
+  }
+  .html-blocks-chessboard__item:nth-child(even) .html-blocks-chessboard__desc {
+    order: 2;
+  }
+  .html-blocks-chessboard__img {
+    min-height: 300px;
+  }
+  .html-blocks-chessboard__desc {
+    padding: 10px 10px 20px;
+  }
+  .html-blocks-chessboard__cell {
+    gap: 15px;
+  }
+}
+.html-blocks-info {
+  background-color: #FDFDFD;
+}
+.html-blocks-info__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.html-blocks-info__logo {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-width: 254px;
+}
+.html-blocks-info__heading {
+  font-size: 48px;
+  line-height: var(--lh);
+  font-weight: 300;
+}
+.html-blocks-info__text {
+  font-family: var(--font2);
+}
+.html-blocks-info__locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 70px;
+  max-width: 800px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.html-blocks-info__location {
+  position: relative;
+}
+.html-blocks-info__location::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  top: 0;
+  left: 0;
+  transform: translateX(-130%) translateY(40%);
+  background-image: url(../img/location.webp);
+}
+@media (max-width: 768px) {
+  .html-blocks-info__heading {
+    font-size: 35px;
+  }
+  .html-blocks-info__locations {
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.html-blocks__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.html-blocks__item {
+  flex: 1 1 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.html-blocks__logo img {
+  width: 250px;
+}
+.html-blocks__heading {
+  font-weight: 300;
+}
+.html-blocks__img {
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .html-blocks__img {
+    min-height: 300px;
+    order: -1;
+  }
+}
+.html-blocks-pricing__container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.html-blocks-pricing__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.html-blocks-pricing__holder.html-blocks-pricing__holder_tint .html-blocks-pricing__row:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.html-blocks-pricing__row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+.html-blocks-pricing__row:nth-child(even) .html-blocks-pricing__item_img {
+  order: 2;
+}
+.html-blocks-pricing__item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  flex: 1 1 600px;
+}
+.html-blocks-pricing__item_img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+  padding: 0;
+}
+.html-blocks-pricing__item_img.img-bg-contain {
+  background-size: contain;
+  background-position: center center;
+}
+.html-blocks-pricing__heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 150%;
+}
+.html-blocks-pricing__prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.html-blocks-pricing__price {
+  color: var(--light);
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration: none;
+}
+.html-blocks-pricing__price:hover,
+.html-blocks-pricing__price:active,
+.html-blocks-pricing__price:visited {
+  color: var(--light);
+  text-decoration: none;
+}
+.html-blocks-pricing__price_selected {
+  background-color: var(--dark1);
+}
+@media (max-width: 1236px) {
+  .html-blocks-pricing__row:nth-child(1) {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+  }
+  .html-blocks-pricing__row:nth-child(even) .html-blocks-pricing__item_img,
+  .html-blocks-pricing__row:nth-child(odd) .html-blocks-pricing__item_img {
+    order: 2;
+  }
+}
+.important {
+  color: red;
+  font-weight: 600;
+}
+.html-blocks-products {
+  background-color: var(--dark1);
+  color: var(--light);
+}
+.html-blocks-products__container {
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+.html-blocks-products__image img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto 25px;
+}
+.html-blocks-products__heading {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.html-blocks-products__text {
+  line-height: var(--lh);
+  margin-bottom: 15px;
+}
+.html-blocks-products__desc {
+  color: var(--dark);
+}
+.html-blocks-products__holder {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.html-blocks-products__item {
+  background-color: var(--light);
+  flex: 1 1 400px;
+  padding: 40px;
+  color: var(--dark);
+}
+.html-blocks-products__picture {
+  display: block;
+  width: auto;
+  height: 300px;
+  object-fit: contain;
+  margin: 0 auto 30px;
+}
+.html-blocks-products__title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.html-block-contact-hero {
+  background-size: cover;
+  background-position: center center;
+}
+.html-block-contact-hero__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.html-block-contact-hero__heading {
+  color: var(--light);
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: var(--lh);
+}
+@media (max-width: 768px) {
+  .html-block-contact-hero__cotainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .html-block-contact-hero__heading {
+    font-size: 45px;
+  }
+}
+.html-block-contact__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.html-block-contact__holder {
+  display: flex;
+}
+@media (max-width: 948px) {
+  .html-block-contact__holder {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.html-block-contact__item {
+  box-sizing: border-box;
+  flex: 1 1 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.html-block-contact__item:nth-child(2) {
+  background-color: var(--dark1);
+  color: var(--light);
+}
+.html-block-contact__item:nth-child(2) a {
+  color: var(--light);
+}
+.html-block-contact__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.html-block-contact__cell iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+.html-block-contact__subheading {
+  font-size: 25px;
+}
+.html-blocks-cars-cards {
+  background-color: #EFEFEF;
+}
+.html-blocks-cars-cards__container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.html-blocks-cars-cards__heading {
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.html-blocks-cars-cards__holder {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.html-blocks-cars-cards__item {
+  background-color: var(--light);
+  display: flex;
+}
+.html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__img {
+  order: 2;
+  flex: 0 1 571px;
+}
+.html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content:before {
+  display: none;
+}
+.html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content::after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 14px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.html-blocks-cars-cards__img {
+  flex: 1 0 600px;
+  min-height: 300px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.html-blocks-cars-cards__content {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  flex: 1 1 600px;
+}
+.html-blocks-cars-cards__content::before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 14px;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.html-blocks-cars-cards__title {
+  font-size: 25px;
+}
+.html-blocks-cars-cards__subheading {
+  font-size: 20px;
+}
+.html-blocks-cars-cards__price {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--blue);
+}
+.html-blocks-cars-cards__ul {
+  text-align: left;
+  padding-left: 20px;
+}
+.html-blocks-cars-cards__btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+@media (max-width: 1150px) {
+  .html-blocks-cars-cards__item {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__img {
+    order: 2;
+    flex: 0 1 300px;
+  }
+  .html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content:before,
+  .html-blocks-cars-cards__item:nth-child(even) .html-blocks-cars-cards__content::after {
+    display: none;
+  }
+  .html-blocks-cars-cards__img {
+    flex: 1 1 300px;
+    width: 300px;
+    order: 1;
+  }
+  .html-blocks-cars-cards__content {
+    padding: 20px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    flex: 1 1 auto;
+  }
+  .html-blocks-cars-cards__content::before,
+  .html-blocks-cars-cards__content::after {
+    display: none;
+  }
+}
+.html-blocks-definition {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
+.html-blocks-definition__item {
+  flex: 1 1 400px;
+}
+.html-blocks-definition__img {
+  width: 100%;
+  max-width: 400px;
+  margin-inline: auto;
+  text-align: center;
+  display: block;
+}
+.html-blocks-definition__text {
+  margin-top: 20px;
+  display: table;
+  margin-inline: auto;
+}
+/*# sourceMappingURL=styles2022.css.map */
